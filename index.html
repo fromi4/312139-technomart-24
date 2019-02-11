@@ -15,9 +15,9 @@
                 <a class="header-logo">
                     <img src="img/technomart-logo.svg" width="160" height="65" alt="Логотип интернет-магазина Техномарт»">
                 </a>
-                <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+                <form class="search-form">
                     <label for="search">O</label>
-                    <input id="search" type="text" name="name" value="" placeholder="Поиск">
+                    <input id="search" type="search" name="name" value="" placeholder="Поиск">
                 </form>
                 <ul class="bookmarks-navigation">
                     <li class="bookmarks-navigation-item"><a class="bookmarks-link" href="#">Закладки: 0</a></li>
@@ -27,21 +27,21 @@
                 </ul>
                 <a class="button button-order" href="#">Оформить заказ</a>
             </section>
-            <div class="user-menu">
-                <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
-                <section class="shop-contacts">
+            <section class="user-menu">
+                <h1 class="page-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+                <div class="shop-contacts">
                     <h2 class="visually-hidden">Контакты магазина</h2>
                     <p class="phone-number">+7 (812) 555-05-55</p>
                     <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-                </section>
-                <section class="user-authorization">
+                </div>
+                <div class="user-authorization">
                     <h2 class="visually-hidden">Авторизация</h2>
                     <div>
                         <a class="button button-login" href="#">Войти</a>
                         <a class="button button-checkin" href="#">Регистрация</a>
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
             <nav class="main-navigation container">
                 <ul class="site-navigation">
                     <li class="site-navigation-item"><a class="site-navigation-link" href="#">Главная</a></li>
@@ -55,7 +55,6 @@
             </nav>
         </header>
         <main>
-            <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
             <section class="promoblock">
                 <h2 class="visually-hidden">Промо-блок основных товаров и услуг</h2>
                 <ul class="promoblock-list">
@@ -138,10 +137,12 @@
                 </ul>
             </section>
             <section class="popular-products">
-                <h2>Популярные товары</h2>
-                <p class="popular-products-all">
-                    <a class="button button-popular-products-all" href="#">все популярные товары</a>
-                </p>
+                <div class="popular">
+                    <h2>Популярные товары</h2>
+                    <p class="popular-products-all">
+                        <a class="button button-popular-products-all" href="#">все популярные товары</a>
+                    </p>
+                </div>
                 <ul class="popular-products-list">
                     <li class="popular-products-item">
                         <img src="img/logo-1.png" width="199" height="68" alt="BOSCH BFG 9000">
@@ -177,10 +178,12 @@
                 </ul>
             </section>
             <section class="popular-brands">
-                <h2>Популярные производители</h2>
-                <p class="popular-brands-all">
-                    <a class="button button-popular-brands-all" href="#">все производители</a>
-                </p>
+                <div class="popular">
+                    <h2>Популярные производители</h2>
+                    <p class="popular-brands-all">
+                        <a class="button button-popular-brands-all" href="#">все производители</a>
+                    </p>
+                </div>
                 <ul class="popular-brands-list">
                     <li class="popular-brands-item">
                         <a class="popular-products-image" href="#">
@@ -272,10 +275,10 @@
                 </section>
             </div>
         </main>
-        <footer class="">
+        <footer class="main-footer">
             <div class="footer-menu">
                 <div class="footer-contacts">
-                    <a class="header-logo">
+                    <a class="footer-logo">
                         <img src="img/technomart-logo.svg" width="160" height="65" alt="Логотип интернет-магазина Техномарт»">
                     </a>
                     <p>
@@ -341,11 +344,18 @@
                     </li>
                 </ul>
                 <div class="developer">
-                    <p class="">Обратная связь:<span>mail@htmlacademy.ru</span></p>
-                    <p class="">Разработано —<span>htmlacademy.ru</span></p>
+                    <p class="developer-item">Обратная связь:<span>mail@htmlacademy.ru</span></p>
+                    <p class="developer-item">Разработано —<a class="developer-link" href="https://htmlacademy.ru/">htmlacademy.ru</a></p>
                 </div>
             </div>
         </footer>
+        <section class="modal-cart">
+            <h2 class="visually-hidden">Товар добавлен в корзину</h2>
+            <p>Товар добавлен в корзину!</p>
+            <a class="button button-confirm" href="#">оформить заказ</a>
+            <a class="button button-continue" href="#">продолжить покупки</a>
+            <button class="modal-close" type="button">Закрыть</button>
+        </section>
         <section class="modal-letter">
             <h2>Напишите нам</h2>
             <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
